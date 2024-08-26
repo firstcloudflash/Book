@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookNook</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fasthtml/tailwind@2.2.19/dist/tailwind.min.css">
+    <style>
+        .glass {
+            background: rgba(255, 255, 255, 0.4);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        .neumorphism {
+            background: #e0e0e0;
+            border-radius: 12px;
+            box-shadow: 7px 7px 15px #bebebe, -7px -7px 15px #ffffff;
+        }
+        .hero {
+            background-image: url('https://source.unsplash.com/1600x900/?books,library');
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+    <!-- Header -->
+    <header class="bg-white shadow-md py-4">
+        <div class="container mx-auto flex justify-between items-center px-6">
+            <h1 class="text-3xl font-bold text-gray-800">BookNook</h1>
+            <nav>
+                <ul class="flex space-x-4">
+                    <li><a href="#home" class="text-gray-600 hover:text-gray-800">Home</a></li>
+                    <li><a href="#ebooks" class="text-gray-600 hover:text-gray-800">Ebooks</a></li>
+                    <li><a href="#cart" class="text-gray-600 hover:text-gray-800">Cart</a></li>
+                    <li><a href="#login" class="text-gray-600 hover:text-gray-800">Login</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero h-screen flex items-center justify-center text-center text-white">
+        <div class="glass p-12 rounded-lg">
+            <h2 class="text-4xl font-bold mb-4">Discover the Best Non-Fiction Ebooks</h2>
+            <p class="text-lg mb-8">Your journey to knowledge begins here. Explore our curated collection of insightful ebooks.</p>
+            <a href="#ebooks" class="bg-green-500 px-6 py-3 rounded-full text-lg font-bold hover:bg-green-600">Browse Collection</a>
+        </div>
+    </section>
